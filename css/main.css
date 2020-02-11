@@ -1,5 +1,5 @@
 header, footer{
-  background: #5db151;
+  background: #3498db;
 }
 
 header{
@@ -46,7 +46,8 @@ a:hover
   text-align: center;
 	color: white;
 	z-index: 10;
-	position: absolute
+	position: absolute;
+	margin-top: 20px;
 }
 /* nav ul {
   display: flex;
@@ -56,12 +57,17 @@ a:hover
 } */
 
 nav li :hover{
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid black;
+	border-radius: 5px;
 }
 
 nav li {
-  padding: 3em 4em 3em 4em;
+  padding: 1em 2em 1em 2em;
+}
+
+nav li a{
+  padding: 1em 2em 1em 2em;
 }
 
 nav{
@@ -158,11 +164,19 @@ h2{
   flex-basis:320px;
   flex-grow:1;
 	width: 320px;
+	padding: 5px;
+	text-align: center;
 }
 
 .product-list-item>figure>p{
-	width: 320px;
 	text-align: justify;
+	padding: 1em;
+}
+
+.product-list-item:nth-child(2n){
+	background-color:#3498db;
+	border-radius: 10px;
+	padding: 5px;
 }
 
 button{
@@ -171,6 +185,8 @@ button{
 	border: none;
 	color: white;
 	border-radius: 5px;
+	transform: scale(1);
+	transition-duration: 0.5s;
 }
 
 button:hover{
@@ -212,7 +228,7 @@ button:hover{
 /* FOOTER */
 
 .pic img {
-  width:90px;
+  width:auto;
   height:90px;
   border-radius:50px;
 }
@@ -220,6 +236,8 @@ button:hover{
 .pic {
   margin : 2em;
 }
+
+
 
 /* -------- BURGER MENU ----------- */
 @media (max-width: 900px){
